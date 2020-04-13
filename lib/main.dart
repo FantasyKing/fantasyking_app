@@ -1,7 +1,6 @@
 import 'package:eishockey_fantasy_app/home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:firebase/firebase.dart';
 
 Future main() async {
 
@@ -14,7 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
 
     SystemChrome.setPreferredOrientations([
-    DeviceOrientation.portraitUp,]);
+      DeviceOrientation.portraitUp,]);
     return MaterialApp(
       title: 'FantasyKing',
       theme: ThemeData(
@@ -69,7 +68,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             FlatButton(
               child: Text('Los gehts', style:
-                TextStyle(fontWeight: FontWeight.bold, fontSize: 16,),),
+              TextStyle(fontWeight: FontWeight.bold, fontSize: 16,),),
               textColor: Colors.white,
               color: Colors.blueGrey,
               onPressed: () {
