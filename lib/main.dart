@@ -1,13 +1,18 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
-void main() {
-  runApp(MyApp());
+Future main() async {
+
+  runApp(new MyApp());
 }
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+
+    SystemChrome.setPreferredOrientations([
+    DeviceOrientation.portraitUp,]);
     return MaterialApp(
       title: 'FantasyKing',
       theme: ThemeData(
@@ -31,29 +36,33 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        // Here we take the value from the MyHomePage object that was created by
-        // the App.build method, and use it to set our appbar title.
-        title: Text(widget.title),
-      ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Container(
-              //TODO: Style Title 
               width: double.infinity,
+              padding: EdgeInsets.all(45),
               child: Title(
                 color: Colors.grey,
-                child: Text('Willkommen bei'),
+                child: Text(
+                  'Willkommen bei',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(fontWeight: FontWeight.normal, fontSize: 38),
+                ),
               ),
             ),
             Image.asset("assets/images/LOGO-1.png"),
             Container(
+              padding: EdgeInsets.all(45),
               width: double.infinity,
               child: Title(
                 color: Colors.grey,
-                child: Text('das Managerspiel der DEL'),
+                child: Text(
+                  'das Managerspiel der DEL',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(fontWeight: FontWeight.normal, fontSize: 30,),
+                ),
               ),
             )
           ],
