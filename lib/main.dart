@@ -1,3 +1,4 @@
+import 'package:eishockey_fantasy_app/home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -64,6 +65,15 @@ class _MyHomePageState extends State<MyHomePage> {
                   style: TextStyle(fontWeight: FontWeight.normal, fontSize: 30,),
                 ),
               ),
+            ),
+            FlatButton(
+              child: Text('Los gehts', style:
+                TextStyle(fontWeight: FontWeight.bold, fontSize: 16,),),
+              textColor: Colors.white,
+              color: Colors.blueGrey,
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) => HomeScreen()));
+              },
             )
           ],
         ),
