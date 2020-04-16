@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "fantasy-king-df030"
+  },
+  "targets": {
+    "fantasy-king-df030": {
+      "hosting": {
+        "flutterapp": [
+          "fantasykingflutter"
+        ]
+      }
+    }
+  }
+}
