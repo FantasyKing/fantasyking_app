@@ -1,3 +1,5 @@
+import 'package:eishockey_fantasy_app/about_screen.dart';
+import 'package:eishockey_fantasy_app/news_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -15,6 +17,16 @@ class _MyStatefulWidgetState  extends State<HomeScreen> {
   void _onItemTapped(int index) {
      setState(() {
       _selectedIndex = index;
+      if(_selectedIndex == 0){
+        Navigator.push(context, MaterialPageRoute(builder: (context) => HomeScreen()));
+      }else if(_selectedIndex == 1){
+
+        Navigator.push(context, MaterialPageRoute(builder: (context) => AboutScreen()));
+
+      }else if(_selectedIndex == 2){
+
+        Navigator.push(context, MaterialPageRoute(builder: (context) => NewsScreen()));
+      }
     });
   }
 
