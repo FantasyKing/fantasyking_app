@@ -1,6 +1,7 @@
 import 'package:eishockey_fantasy_app/home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:firebase/firebase.dart';
 
 Future main() async {
 
