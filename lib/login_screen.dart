@@ -174,4 +174,6 @@ class _MyStatefulWidgetState extends State<LoginScreen> {
       },
     );
   }
+
+  //TODO: AUth to Firebase Impl
 }
