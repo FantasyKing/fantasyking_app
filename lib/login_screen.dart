@@ -40,21 +40,39 @@ class _MyStatefulWidgetState extends State<LoginScreen> {
     return Scaffold(
       body: Center(
         child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-              Image.asset("assets/images/LOGO-1.png"),
-              Card(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            Image.asset("assets/images/LOGO-1.png"),
+            Container(
+              width: 350,
+              child: Card(
+                shadowColor: Colors.blueGrey,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10.0),
+                ),
+                color: Colors.white,
                 child: Column(
-                  mainAxisSize: MainAxisSize.min,
                   children: <Widget>[
-                    const ListTile(
-                      title: Text('Login'),
+                    TextField(
+                      style: TextStyle(
+                          color: Colors.blueGrey, fontWeight: FontWeight.w300),
+                      keyboardType: TextInputType.emailAddress,
+                      decoration: InputDecoration(
+                          labelText: 'E-Mail Adresse',
+                          prefixIcon: Icon(
+                            Icons.mail,
+                            color: Colors.blueGrey,
+                          )),
                     ),
                     TextField(
-                      decoration: InputDecoration(labelText: 'E-Mail Adresse'),
-                    ),
-                    TextField(
-                      decoration: InputDecoration(labelText: 'Passwort'),
+                      obscureText: true,
+                      decoration: InputDecoration(
+                        labelText: 'Passwort',
+                        prefixIcon: Icon(
+                          Icons.vpn_key,
+                          color: Colors.blueGrey,
+                        ),
+                      ),
                     ),
                     FlatButton(
                       child: Text(
@@ -73,18 +91,31 @@ class _MyStatefulWidgetState extends State<LoginScreen> {
                     ButtonBar(
                       children: <Widget>[
                         FlatButton(
-                          child: const Text('Passwort vergessen?'),
+                          child: Text(
+                            'Passwort vergessen?',
+                            style: TextStyle(
+                              color: Colors.grey,
+                              fontSize: 14,
+                            ),
+                          ),
                           onPressed: () {
                             print('Passwort vergessen');
                             _ackAlert(context);
                           },
                         ),
                         FlatButton(
-                          child: const Text('Noch kein Account?'),
+                          child: const Text('Noch kein Account?',
+                              style: TextStyle(
+                                color: Colors.grey,
+                                fontSize: 14,
+                              )),
                           onPressed: () {
                             print('Noch kein Account');
                             Navigator.push(
-                                context, MaterialPageRoute(builder: (context) => RegistrationScreen()));
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) =>
+                                        RegistrationScreen()));
                           },
                         ),
                       ],
@@ -93,7 +124,9 @@ class _MyStatefulWidgetState extends State<LoginScreen> {
                 ),
               ),
               //Button für die Registrierung
-            ]),
+            )
+          ],
+        ),
       ),
       bottomNavigationBar: BottomNavigationBar(
         items: const <BottomNavigationBarItem>[
