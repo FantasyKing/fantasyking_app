@@ -1,6 +1,7 @@
 import 'package:eishockey_fantasy_app/about_screen.dart';
 import 'package:eishockey_fantasy_app/news_screen.dart';
 import 'package:eishockey_fantasy_app/login_screen.dart';
+import 'package:eishockey_fantasy_app/registration_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -56,7 +57,7 @@ class _MyStatefulWidgetState  extends State<HomeScreen> {
                 color: Colors.blueGrey,
                 onPressed: () {
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => HomeScreen()));
+                      MaterialPageRoute(builder: (context) => RegistrationScreen()));
                 },
               ),
               FlatButton(

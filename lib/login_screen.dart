@@ -2,6 +2,7 @@ import 'package:eishockey_fantasy_app/about_screen.dart';
 import 'package:eishockey_fantasy_app/home_screen.dart';
 import 'package:eishockey_fantasy_app/news_screen.dart';
 import 'package:eishockey_fantasy_app/registration_screen.dart';
+import 'package:eishockey_fantasy_app/services/auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -13,6 +14,8 @@ class LoginScreen extends StatefulWidget {
 }
 
 class _MyStatefulWidgetState extends State<LoginScreen> {
+
+  final AuthService _authService =  AuthService();
   int _selectedIndex = 0;
 
   void _onItemTapped(int index) {
@@ -69,7 +72,7 @@ class _MyStatefulWidgetState extends State<LoginScreen> {
                       decoration: InputDecoration(
                         labelText: 'Passwort',
                         prefixIcon: Icon(
-                          Icons.vpn_key,
+                          Icons.lock,
                           color: Colors.blueGrey,
                         ),
                       ),
@@ -84,8 +87,9 @@ class _MyStatefulWidgetState extends State<LoginScreen> {
                       ),
                       textColor: Colors.white,
                       color: Color.fromRGBO(157, 180, 192, 1.0),
-                      onPressed: () {
+                      onPressed: ()  async {
                         print('Okay');
+                        await _authService.signInEmailPassword("test@tes.com", "jan&Test1234");
                       },
                     ),
                     ButtonBar(
@@ -175,5 +179,5 @@ class _MyStatefulWidgetState extends State<LoginScreen> {
     );
   }
 
-  //TODO: AUth to Firebase Impl
+  //TODO: AUth to Firebase Impl joooooop
 }
