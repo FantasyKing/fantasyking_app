@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "285013087632",
+    "firebase_url": "https://fantasy-king-df030.firebaseio.com",
+    "project_id": "fantasy-king-df030",
+    "storage_bucket": "fantasy-king-df030.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:285013087632:android:16f4bfe86654379fc20f15",
+        "android_client_info": {
+          "package_name": "com.example.eishockey_fantasy_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "285013087632-n9have9kg0qljc3f480jqd58krmq25kf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8yPtkQW6dNqeaYWl2IHEsPqtBBrLpa0Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "285013087632-n9have9kg0qljc3f480jqd58krmq25kf.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "285013087632-93cs6cn5124nnr636dd3pujjonp6akjo.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "FK.FantasyKing"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
