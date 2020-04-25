@@ -75,7 +75,7 @@ class _MyStatefulWidgetState extends State<RegistrationScreen> {
                     ),
                     FlatButton(
                       child: Text(
-                        'Login',
+                        'Register',
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
                           fontSize: 16,
