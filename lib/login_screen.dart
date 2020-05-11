@@ -109,7 +109,7 @@ class _MyStatefulWidgetState extends State<LoginScreen> {
                             ),
                           ),
                           onPressed: () {
-                            print('Passwort vergessen');
+                            print('Passworit vergessen');
                             _ackAlert(context);
                           },
                         ),
