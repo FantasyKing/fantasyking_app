@@ -34,6 +34,9 @@ class _MyStatefulWidgetState extends State<LoginScreen> {
     });
   }
 
+  final emailController = TextEditingController();
+  final passwordController = TextEditingController();
+
   @override
   Widget build(BuildContext context) {
     SystemChrome.setPreferredOrientations([
@@ -66,6 +69,7 @@ class _MyStatefulWidgetState extends State<LoginScreen> {
                             Icons.mail,
                             color: Colors.blueGrey,
                           )),
+                      controller: emailController,
                     ),
                     TextField(
                       obscureText: true,
@@ -76,6 +80,7 @@ class _MyStatefulWidgetState extends State<LoginScreen> {
                           color: Colors.blueGrey,
                         ),
                       ),
+                      controller: passwordController,
                     ),
                     FlatButton(
                       child: Text(
@@ -89,7 +94,8 @@ class _MyStatefulWidgetState extends State<LoginScreen> {
                       color: Color.fromRGBO(157, 180, 192, 1.0),
                       onPressed: ()  async {
                         print('Okay');
-                        await _authService.signInEmailPassword("test@tes.com", "jan&Test1234");
+                        await _authService.signInEmailPassword(emailController.text, passwordController.text);
+                        print(emailController.text + " / " + passwordController.text);
                       },
                     ),
                     ButtonBar(
@@ -178,6 +184,4 @@ class _MyStatefulWidgetState extends State<LoginScreen> {
       },
     );
   }
-
-  //TODO: AUth to Firebase Impl joooooop
 }

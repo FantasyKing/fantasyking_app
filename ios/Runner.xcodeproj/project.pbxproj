@@ -9,11 +9,12 @@
 /* Begin PBXBuildFile section */
 		1498D2341E8E89220040F4C2 /* GeneratedPluginRegistrant.m in Sources */ = {isa = PBXBuildFile; fileRef = 1498D2331E8E89220040F4C2 /* GeneratedPluginRegistrant.m */; };
 		3B3967161E833CAA004F5970 /* AppFrameworkInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B3967151E833CAA004F5970 /* AppFrameworkInfo.plist */; };
+		5A2A7FAE2218C68092648456 /* Pods_Runner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E57B99B898C9BF4F6382285C /* Pods_Runner.framework */; };
 		74858FAF1ED2DC5600515810 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74858FAE1ED2DC5600515810 /* AppDelegate.swift */; };
 		97C146FC1CF9000F007C117D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FA1CF9000F007C117D /* Main.storyboard */; };
 		97C146FE1CF9000F007C117D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FD1CF9000F007C117D /* Assets.xcassets */; };
 		97C147011CF9000F007C117D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FF1CF9000F007C117D /* LaunchScreen.storyboard */; };
-		FABF8793244C8E8000005655 /* Flutter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FAACCEF2244C5C8D004F6B8A /* Flutter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FA2B439F2454867F004266E7 /* Runner.app in Resources */ = {isa = PBXBuildFile; fileRef = 97C146EE1CF9000F007C117D /* Runner.app */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -264,7 +265,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				FABF8793244C8E8000005655 /* Flutter.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,8 +272,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0CB562C4EB4E3B16F616C92D /* Pods-Runner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.debug.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.debug.xcconfig"; sourceTree = "<group>"; };
 		1498D2321E8E86230040F4C2 /* GeneratedPluginRegistrant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GeneratedPluginRegistrant.h; sourceTree = "<group>"; };
 		1498D2331E8E89220040F4C2 /* GeneratedPluginRegistrant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeneratedPluginRegistrant.m; sourceTree = "<group>"; };
+		274DB07786671BF8525CF07C /* Pods-Runner.profile.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.profile.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.profile.xcconfig"; sourceTree = "<group>"; };
 		3B3967151E833CAA004F5970 /* AppFrameworkInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = AppFrameworkInfo.plist; path = Flutter/AppFrameworkInfo.plist; sourceTree = "<group>"; };
 		74858FAD1ED2DC5600515810 /* Runner-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Runner-Bridging-Header.h"; sourceTree = "<group>"; };
 		74858FAE1ED2DC5600515810 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -285,6 +287,8 @@
 		97C146FD1CF9000F007C117D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		97C147001CF9000F007C117D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		97C147021CF9000F007C117D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E57B99B898C9BF4F6382285C /* Pods_Runner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Runner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2462766A717ED78A630DD97 /* Pods-Runner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.release.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.release.xcconfig"; sourceTree = "<group>"; };
 		FAACCEA7244C5C8D004F6B8A /* CODE_OF_CONDUCT.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CODE_OF_CONDUCT.md; sourceTree = "<group>"; };
 		FAACCEA8244C5C8D004F6B8A /* .codecov.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .codecov.yml; sourceTree = "<group>"; };
 		FAACCEA9244C5C8D004F6B8A /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -3103,40 +3107,40 @@
 		FAACDB8D244C5C93004F6B8A /* android.iml.copy.tmpl */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = android.iml.copy.tmpl; sourceTree = "<group>"; };
 		FAACDB8F244C5C93004F6B8A /* devicelab.iml.copy.tmpl */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = devicelab.iml.copy.tmpl; sourceTree = "<group>"; };
 		FAACDB92244C5C93004F6B8A /* complex_layout.iml.copy.tmpl */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = complex_layout.iml.copy.tmpl; sourceTree = "<group>"; };
-		FAACDB95244C5C93004F6B8A /* manual_tests___color_testing_demo.xml.copy.tmpl */ = {isa = PBXFileReference; lastKnownFileType = text; path = "manual_tests___color_testing_demo.xml.copy.tmpl"; sourceTree = "<group>"; };
-		FAACDB96244C5C93004F6B8A /* catalog___animated_list.xml.copy.tmpl */ = {isa = PBXFileReference; lastKnownFileType = text; path = "catalog___animated_list.xml.copy.tmpl"; sourceTree = "<group>"; };
+		FAACDB95244C5C93004F6B8A /* manual_tests___color_testing_demo.xml.copy.tmpl */ = {isa = PBXFileReference; lastKnownFileType = text; path = manual_tests___color_testing_demo.xml.copy.tmpl; sourceTree = "<group>"; };
+		FAACDB96244C5C93004F6B8A /* catalog___animated_list.xml.copy.tmpl */ = {isa = PBXFileReference; lastKnownFileType = text; path = catalog___animated_list.xml.copy.tmpl; sourceTree = "<group>"; };
 		FAACDB97244C5C93004F6B8A /* flutter_gallery.xml.copy.tmpl */ = {isa = PBXFileReference; lastKnownFileType = text; path = flutter_gallery.xml.copy.tmpl; sourceTree = "<group>"; };
-		FAACDB98244C5C93004F6B8A /* layers___styled_text.xml.copy.tmpl */ = {isa = PBXFileReference; lastKnownFileType = text; path = "layers___styled_text.xml.copy.tmpl"; sourceTree = "<group>"; };
-		FAACDB99244C5C93004F6B8A /* catalog___custom_semantics.xml.copy.tmpl */ = {isa = PBXFileReference; lastKnownFileType = text; path = "catalog___custom_semantics.xml.copy.tmpl"; sourceTree = "<group>"; };
-		FAACDB9A244C5C93004F6B8A /* manual_tests___overlay_geometry.xml.copy.tmpl */ = {isa = PBXFileReference; lastKnownFileType = text; path = "manual_tests___overlay_geometry.xml.copy.tmpl"; sourceTree = "<group>"; };
-		FAACDB9B244C5C93004F6B8A /* manual_tests___page_view.xml.copy.tmpl */ = {isa = PBXFileReference; lastKnownFileType = text; path = "manual_tests___page_view.xml.copy.tmpl"; sourceTree = "<group>"; };
-		FAACDB9C244C5C93004F6B8A /* layers___gestures.xml.copy.tmpl */ = {isa = PBXFileReference; lastKnownFileType = text; path = "layers___gestures.xml.copy.tmpl"; sourceTree = "<group>"; };
-		FAACDB9D244C5C93004F6B8A /* catalog___tabbed_app_bar.xml.copy.tmpl */ = {isa = PBXFileReference; lastKnownFileType = text; path = "catalog___tabbed_app_bar.xml.copy.tmpl"; sourceTree = "<group>"; };
-		FAACDB9E244C5C93004F6B8A /* catalog___basic_app_bar.xml.copy.tmpl */ = {isa = PBXFileReference; lastKnownFileType = text; path = "catalog___basic_app_bar.xml.copy.tmpl"; sourceTree = "<group>"; };
-		FAACDB9F244C5C93004F6B8A /* manual_tests___actions.xml.copy.tmpl */ = {isa = PBXFileReference; lastKnownFileType = text; path = "manual_tests___actions.xml.copy.tmpl"; sourceTree = "<group>"; };
-		FAACDBA0244C5C93004F6B8A /* layers___sectors.xml.copy.tmpl */ = {isa = PBXFileReference; lastKnownFileType = text; path = "layers___sectors.xml.copy.tmpl"; sourceTree = "<group>"; };
-		FAACDBA1244C5C93004F6B8A /* manual_tests___focus.xml.copy.tmpl */ = {isa = PBXFileReference; lastKnownFileType = text; path = "manual_tests___focus.xml.copy.tmpl"; sourceTree = "<group>"; };
+		FAACDB98244C5C93004F6B8A /* layers___styled_text.xml.copy.tmpl */ = {isa = PBXFileReference; lastKnownFileType = text; path = layers___styled_text.xml.copy.tmpl; sourceTree = "<group>"; };
+		FAACDB99244C5C93004F6B8A /* catalog___custom_semantics.xml.copy.tmpl */ = {isa = PBXFileReference; lastKnownFileType = text; path = catalog___custom_semantics.xml.copy.tmpl; sourceTree = "<group>"; };
+		FAACDB9A244C5C93004F6B8A /* manual_tests___overlay_geometry.xml.copy.tmpl */ = {isa = PBXFileReference; lastKnownFileType = text; path = manual_tests___overlay_geometry.xml.copy.tmpl; sourceTree = "<group>"; };
+		FAACDB9B244C5C93004F6B8A /* manual_tests___page_view.xml.copy.tmpl */ = {isa = PBXFileReference; lastKnownFileType = text; path = manual_tests___page_view.xml.copy.tmpl; sourceTree = "<group>"; };
+		FAACDB9C244C5C93004F6B8A /* layers___gestures.xml.copy.tmpl */ = {isa = PBXFileReference; lastKnownFileType = text; path = layers___gestures.xml.copy.tmpl; sourceTree = "<group>"; };
+		FAACDB9D244C5C93004F6B8A /* catalog___tabbed_app_bar.xml.copy.tmpl */ = {isa = PBXFileReference; lastKnownFileType = text; path = catalog___tabbed_app_bar.xml.copy.tmpl; sourceTree = "<group>"; };
+		FAACDB9E244C5C93004F6B8A /* catalog___basic_app_bar.xml.copy.tmpl */ = {isa = PBXFileReference; lastKnownFileType = text; path = catalog___basic_app_bar.xml.copy.tmpl; sourceTree = "<group>"; };
+		FAACDB9F244C5C93004F6B8A /* manual_tests___actions.xml.copy.tmpl */ = {isa = PBXFileReference; lastKnownFileType = text; path = manual_tests___actions.xml.copy.tmpl; sourceTree = "<group>"; };
+		FAACDBA0244C5C93004F6B8A /* layers___sectors.xml.copy.tmpl */ = {isa = PBXFileReference; lastKnownFileType = text; path = layers___sectors.xml.copy.tmpl; sourceTree = "<group>"; };
+		FAACDBA1244C5C93004F6B8A /* manual_tests___focus.xml.copy.tmpl */ = {isa = PBXFileReference; lastKnownFileType = text; path = manual_tests___focus.xml.copy.tmpl; sourceTree = "<group>"; };
 		FAACDBA2244C5C93004F6B8A /* hello_world.xml.copy.tmpl */ = {isa = PBXFileReference; lastKnownFileType = text; path = hello_world.xml.copy.tmpl; sourceTree = "<group>"; };
 		FAACDBA3244C5C93004F6B8A /* flutter_view.xml.copy.tmpl */ = {isa = PBXFileReference; lastKnownFileType = text; path = flutter_view.xml.copy.tmpl; sourceTree = "<group>"; };
-		FAACDBA4244C5C93004F6B8A /* manual_tests___text.xml.copy.tmpl */ = {isa = PBXFileReference; lastKnownFileType = text; path = "manual_tests___text.xml.copy.tmpl"; sourceTree = "<group>"; };
-		FAACDBA5244C5C93004F6B8A /* manual_tests___card_collection.xml.copy.tmpl */ = {isa = PBXFileReference; lastKnownFileType = text; path = "manual_tests___card_collection.xml.copy.tmpl"; sourceTree = "<group>"; };
-		FAACDBA6244C5C93004F6B8A /* layers___custom_render_box.xml.copy.tmpl */ = {isa = PBXFileReference; lastKnownFileType = text; path = "layers___custom_render_box.xml.copy.tmpl"; sourceTree = "<group>"; };
-		FAACDBA7244C5C93004F6B8A /* manual_tests___hover.xml.copy.tmpl */ = {isa = PBXFileReference; lastKnownFileType = text; path = "manual_tests___hover.xml.copy.tmpl"; sourceTree = "<group>"; };
+		FAACDBA4244C5C93004F6B8A /* manual_tests___text.xml.copy.tmpl */ = {isa = PBXFileReference; lastKnownFileType = text; path = manual_tests___text.xml.copy.tmpl; sourceTree = "<group>"; };
+		FAACDBA5244C5C93004F6B8A /* manual_tests___card_collection.xml.copy.tmpl */ = {isa = PBXFileReference; lastKnownFileType = text; path = manual_tests___card_collection.xml.copy.tmpl; sourceTree = "<group>"; };
+		FAACDBA6244C5C93004F6B8A /* layers___custom_render_box.xml.copy.tmpl */ = {isa = PBXFileReference; lastKnownFileType = text; path = layers___custom_render_box.xml.copy.tmpl; sourceTree = "<group>"; };
+		FAACDBA7244C5C93004F6B8A /* manual_tests___hover.xml.copy.tmpl */ = {isa = PBXFileReference; lastKnownFileType = text; path = manual_tests___hover.xml.copy.tmpl; sourceTree = "<group>"; };
 		FAACDBA8244C5C93004F6B8A /* flutter_tools.xml.copy.tmpl */ = {isa = PBXFileReference; lastKnownFileType = text; path = flutter_tools.xml.copy.tmpl; sourceTree = "<group>"; };
-		FAACDBA9244C5C93004F6B8A /* catalog___expansion_tile_sample.xml.copy.tmpl */ = {isa = PBXFileReference; lastKnownFileType = text; path = "catalog___expansion_tile_sample.xml.copy.tmpl"; sourceTree = "<group>"; };
-		FAACDBAA244C5C93004F6B8A /* manual_tests___density.xml.copy.tmpl */ = {isa = PBXFileReference; lastKnownFileType = text; path = "manual_tests___density.xml.copy.tmpl"; sourceTree = "<group>"; };
-		FAACDBAB244C5C93004F6B8A /* layers___isolate.xml.copy.tmpl */ = {isa = PBXFileReference; lastKnownFileType = text; path = "layers___isolate.xml.copy.tmpl"; sourceTree = "<group>"; };
-		FAACDBAC244C5C93004F6B8A /* catalog___app_bar_bottom.xml.copy.tmpl */ = {isa = PBXFileReference; lastKnownFileType = text; path = "catalog___app_bar_bottom.xml.copy.tmpl"; sourceTree = "<group>"; };
-		FAACDBAD244C5C93004F6B8A /* manual_tests___raw_keyboard.xml.copy.tmpl */ = {isa = PBXFileReference; lastKnownFileType = text; path = "manual_tests___raw_keyboard.xml.copy.tmpl"; sourceTree = "<group>"; };
-		FAACDBAE244C5C93004F6B8A /* manual_tests___drag_and_drop.xml.copy.tmpl */ = {isa = PBXFileReference; lastKnownFileType = text; path = "manual_tests___drag_and_drop.xml.copy.tmpl"; sourceTree = "<group>"; };
-		FAACDBAF244C5C93004F6B8A /* manual_tests___material_arc.xml.copy.tmpl */ = {isa = PBXFileReference; lastKnownFileType = text; path = "manual_tests___material_arc.xml.copy.tmpl"; sourceTree = "<group>"; };
+		FAACDBA9244C5C93004F6B8A /* catalog___expansion_tile_sample.xml.copy.tmpl */ = {isa = PBXFileReference; lastKnownFileType = text; path = catalog___expansion_tile_sample.xml.copy.tmpl; sourceTree = "<group>"; };
+		FAACDBAA244C5C93004F6B8A /* manual_tests___density.xml.copy.tmpl */ = {isa = PBXFileReference; lastKnownFileType = text; path = manual_tests___density.xml.copy.tmpl; sourceTree = "<group>"; };
+		FAACDBAB244C5C93004F6B8A /* layers___isolate.xml.copy.tmpl */ = {isa = PBXFileReference; lastKnownFileType = text; path = layers___isolate.xml.copy.tmpl; sourceTree = "<group>"; };
+		FAACDBAC244C5C93004F6B8A /* catalog___app_bar_bottom.xml.copy.tmpl */ = {isa = PBXFileReference; lastKnownFileType = text; path = catalog___app_bar_bottom.xml.copy.tmpl; sourceTree = "<group>"; };
+		FAACDBAD244C5C93004F6B8A /* manual_tests___raw_keyboard.xml.copy.tmpl */ = {isa = PBXFileReference; lastKnownFileType = text; path = manual_tests___raw_keyboard.xml.copy.tmpl; sourceTree = "<group>"; };
+		FAACDBAE244C5C93004F6B8A /* manual_tests___drag_and_drop.xml.copy.tmpl */ = {isa = PBXFileReference; lastKnownFileType = text; path = manual_tests___drag_and_drop.xml.copy.tmpl; sourceTree = "<group>"; };
+		FAACDBAF244C5C93004F6B8A /* manual_tests___material_arc.xml.copy.tmpl */ = {isa = PBXFileReference; lastKnownFileType = text; path = manual_tests___material_arc.xml.copy.tmpl; sourceTree = "<group>"; };
 		FAACDBB0244C5C93004F6B8A /* plaform_view.xml.copy.tmpl */ = {isa = PBXFileReference; lastKnownFileType = text; path = plaform_view.xml.copy.tmpl; sourceTree = "<group>"; };
-		FAACDBB1244C5C93004F6B8A /* catalog___custom_a11y_traversal.xml.tmpl */ = {isa = PBXFileReference; lastKnownFileType = text; path = "catalog___custom_a11y_traversal.xml.tmpl"; sourceTree = "<group>"; };
+		FAACDBB1244C5C93004F6B8A /* catalog___custom_a11y_traversal.xml.tmpl */ = {isa = PBXFileReference; lastKnownFileType = text; path = catalog___custom_a11y_traversal.xml.tmpl; sourceTree = "<group>"; };
 		FAACDBB2244C5C93004F6B8A /* platform_channel.xml.copy.tmpl */ = {isa = PBXFileReference; lastKnownFileType = text; path = platform_channel.xml.copy.tmpl; sourceTree = "<group>"; };
-		FAACDBB3244C5C93004F6B8A /* layers___spinning_square.xml.copy.tmpl */ = {isa = PBXFileReference; lastKnownFileType = text; path = "layers___spinning_square.xml.copy.tmpl"; sourceTree = "<group>"; };
-		FAACDBB4244C5C93004F6B8A /* layers___lifecycle.xml.copy.tmpl */ = {isa = PBXFileReference; lastKnownFileType = text; path = "layers___lifecycle.xml.copy.tmpl"; sourceTree = "<group>"; };
-		FAACDBB5244C5C93004F6B8A /* layers___hello_world.xml.copy.tmpl */ = {isa = PBXFileReference; lastKnownFileType = text; path = "layers___hello_world.xml.copy.tmpl"; sourceTree = "<group>"; };
-		FAACDBB6244C5C93004F6B8A /* benchmarks___complex_layout.xml.copy.tmpl */ = {isa = PBXFileReference; lastKnownFileType = text; path = "benchmarks___complex_layout.xml.copy.tmpl"; sourceTree = "<group>"; };
+		FAACDBB3244C5C93004F6B8A /* layers___spinning_square.xml.copy.tmpl */ = {isa = PBXFileReference; lastKnownFileType = text; path = layers___spinning_square.xml.copy.tmpl; sourceTree = "<group>"; };
+		FAACDBB4244C5C93004F6B8A /* layers___lifecycle.xml.copy.tmpl */ = {isa = PBXFileReference; lastKnownFileType = text; path = layers___lifecycle.xml.copy.tmpl; sourceTree = "<group>"; };
+		FAACDBB5244C5C93004F6B8A /* layers___hello_world.xml.copy.tmpl */ = {isa = PBXFileReference; lastKnownFileType = text; path = layers___hello_world.xml.copy.tmpl; sourceTree = "<group>"; };
+		FAACDBB6244C5C93004F6B8A /* benchmarks___complex_layout.xml.copy.tmpl */ = {isa = PBXFileReference; lastKnownFileType = text; path = benchmarks___complex_layout.xml.copy.tmpl; sourceTree = "<group>"; };
 		FAACDBB7244C5C93004F6B8A /* platform_channel_swift.xml.copy.tmpl */ = {isa = PBXFileReference; lastKnownFileType = text; path = platform_channel_swift.xml.copy.tmpl; sourceTree = "<group>"; };
 		FAACDBB8244C5C93004F6B8A /* modules.xml.tmpl */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = modules.xml.tmpl; sourceTree = "<group>"; };
 		FAACDBB9244C5C93004F6B8A /* vcs.xml.copy.tmpl */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = vcs.xml.copy.tmpl; sourceTree = "<group>"; };
@@ -5470,12 +5474,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A2A7FAE2218C68092648456 /* Pods_Runner.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8B9CE1B16B5FEFB5A77C3291 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0CB562C4EB4E3B16F616C92D /* Pods-Runner.debug.xcconfig */,
+				F2462766A717ED78A630DD97 /* Pods-Runner.release.xcconfig */,
+				274DB07786671BF8525CF07C /* Pods-Runner.profile.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		9740EEB11CF90186004384FC /* Flutter */ = {
 			isa = PBXGroup;
 			children = (
@@ -5494,6 +5510,7 @@
 				97C146F01CF9000F007C117D /* Runner */,
 				97C146EF1CF9000F007C117D /* Products */,
 				FAACCEA5244C5C8C004F6B8A /* Frameworks */,
+				8B9CE1B16B5FEFB5A77C3291 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -5532,6 +5549,7 @@
 			isa = PBXGroup;
 			children = (
 				FAACCEA6244C5C8D004F6B8A /* flutter */,
+				E57B99B898C9BF4F6382285C /* Pods_Runner.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -12670,6 +12688,8 @@
 		};
 		FAACDCCF244C5C93004F6B8A /* Products */ = {
 			isa = PBXGroup;
+			children = (
+			);
 			name = Products;
 			sourceTree = "<group>";
 		};
@@ -12751,6 +12771,8 @@
 		};
 		FAACDCF3244C5C93004F6B8A /* Products */ = {
 			isa = PBXGroup;
+			children = (
+			);
 			name = Products;
 			sourceTree = "<group>";
 		};
@@ -12784,6 +12806,8 @@
 		};
 		FAACDCFF244C5C93004F6B8A /* Products */ = {
 			isa = PBXGroup;
+			children = (
+			);
 			name = Products;
 			sourceTree = "<group>";
 		};
@@ -12999,6 +13023,8 @@
 		};
 		FAACDD30244C5C93004F6B8A /* Products */ = {
 			isa = PBXGroup;
+			children = (
+			);
 			name = Products;
 			sourceTree = "<group>";
 		};
@@ -22039,12 +22065,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 97C147051CF9000F007C117D /* Build configuration list for PBXNativeTarget "Runner" */;
 			buildPhases = (
+				30DB3807750ADF4284EE98CE /* [CP] Check Pods Manifest.lock */,
 				9740EEB61CF901F6004384FC /* Run Script */,
 				97C146EA1CF9000F007C117D /* Sources */,
 				97C146EB1CF9000F007C117D /* Frameworks */,
 				97C146EC1CF9000F007C117D /* Resources */,
 				9705A1C41CF9048500538489 /* Embed Frameworks */,
 				3B06AD1E1E4923F5004D2608 /* Thin Binary */,
+				5E75BF3AD6BEB56EC1434FD6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -22481,6 +22509,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				97C147011CF9000F007C117D /* LaunchScreen.storyboard in Resources */,
+				FA2B439F2454867F004266E7 /* Runner.app in Resources */,
 				3B3967161E833CAA004F5970 /* AppFrameworkInfo.plist in Resources */,
 				97C146FE1CF9000F007C117D /* Assets.xcassets in Resources */,
 				97C146FC1CF9000F007C117D /* Main.storyboard in Resources */,
@@ -22490,6 +22519,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		30DB3807750ADF4284EE98CE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Runner-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		3B06AD1E1E4923F5004D2608 /* Thin Binary */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -22502,7 +22553,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/bin/sh \"$FLUTTER_ROOT/packages/flutter_tools/bin/xcode_backend.sh\" embed\n/bin/sh \"$FLUTTER_ROOT/packages/flutter_tools/bin/xcode_backend.sh\" thin\n";
+			shellScript = "/bin/sh \"$FLUTTER_ROOT/packages/flutter_tools/bin/xcode_backend.sh\" embed\n/bin/sh \"$FLUTTER_ROOT/packages/flutter_tools/bin/xcode_backend.sh\" thin\n\n";
+		};
+		5E75BF3AD6BEB56EC1434FD6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Runner/Pods-Runner-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Runner/Pods-Runner-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Runner/Pods-Runner-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 		9740EEB61CF901F6004384FC /* Run Script */ = {
 			isa = PBXShellScriptBuildPhase;

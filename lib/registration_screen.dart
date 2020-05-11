@@ -1,8 +1,11 @@
 import 'package:eishockey_fantasy_app/about_screen.dart';
 import 'package:eishockey_fantasy_app/home_screen.dart';
+import 'package:eishockey_fantasy_app/login_screen.dart';
 import 'package:eishockey_fantasy_app/news_screen.dart';
+import 'package:eishockey_fantasy_app/services/auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:eishockey_fantasy_app/dashboard_screen.dart';
 
 class RegistrationScreen extends StatefulWidget {
   RegistrationScreen({Key key}) : super(key: key);
@@ -12,6 +15,7 @@ class RegistrationScreen extends StatefulWidget {
 }
 
 class _MyStatefulWidgetState extends State<RegistrationScreen> {
+  final AuthService _authService = AuthService();
   int _selectedIndex = 0;
 
   void _onItemTapped(int index) {
@@ -29,6 +33,11 @@ class _MyStatefulWidgetState extends State<RegistrationScreen> {
       }
     });
   }
+
+  // Controller
+
+  final emailController = TextEditingController();
+  final passwordController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -62,6 +71,7 @@ class _MyStatefulWidgetState extends State<RegistrationScreen> {
                             Icons.mail,
                             color: Colors.blueGrey,
                           )),
+                      controller: emailController,
                     ),
                     TextField(
                       obscureText: true,
@@ -72,6 +82,7 @@ class _MyStatefulWidgetState extends State<RegistrationScreen> {
                           color: Colors.blueGrey,
                         ),
                       ),
+                      controller: passwordController,
                     ),
                     FlatButton(
                       child: Text(
@@ -83,8 +94,16 @@ class _MyStatefulWidgetState extends State<RegistrationScreen> {
                       ),
                       textColor: Colors.white,
                       color: Color.fromRGBO(157, 180, 192, 1.0),
-                      onPressed: () {
-                        print('Okay');
+                        onPressed: ()  async {
+                          await _authService.registerInEmailPassword(emailController.text, passwordController.text);
+                          print(emailController.text + " / " + passwordController.text);
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) =>
+
+                                      DashboardScreen()));
+
                       },
                     ),
                     ButtonBar(

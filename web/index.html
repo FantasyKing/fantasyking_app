@@ -13,8 +13,27 @@
 
   <!-- Favicon -->
   <link rel="shortcut icon" type="image/png" href="favicon.png"/>
-  <script src=”https://www.gstatic.com/firebasejs/6.6.0/firebase-app.js"></script>
-  <script src=”https://www.gstatic.com/firebasejs/6.6.0/firebase-auth.js"></script>
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-app.js"></script>
+  <script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCHRDs0EEMZ8eurpxDIY7Hkoe9oepdRl1s",
+    authDomain: "fantasy-king-df030.firebaseapp.com",
+    databaseURL: "https://fantasy-king-df030.firebaseio.com",
+    projectId: "fantasy-king-df030",
+    storageBucket: "fantasy-king-df030.appspot.com",
+    messagingSenderId: "285013087632",
+    appId: "1:285013087632:web:930ba954b1300042"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+
+  <script defer src="https://www.gstatic.com/firebasejs/7.14.2/firebase-auth.js"></script>
+  <script defer src="https://www.gstatic.com/firebasejs/7.14.2/firebase-firestore.js"></script>
 
   <title>eishockey_fantasy_app</title>
   <link rel="manifest" href="manifest.json">
